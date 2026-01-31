@@ -7,7 +7,7 @@ export default function GetStarted(){
   const {ref,show}=useReveal(80);
   return (
     <section className="bg-[#7b7a43]" ref={ref}>
-      <div className="min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-center justify-center px-[3vw]">
+      <div className="min-h-125 md:min-h-150 lg:min-h-175 flex items-center justify-center px-[3vw]">
         <div className="text-center max-w-237.5">
           <Animated show={show} delay={0}>
             <h2 className="font-medium text-[clamp(2.5rem,3vw,3.25rem)] text-[#fbf7f2] mb-10">

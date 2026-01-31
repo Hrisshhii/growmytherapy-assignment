@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 import Animated from "./hooks/Animated";
 import { useReveal } from "./hooks/useReveal";
 
