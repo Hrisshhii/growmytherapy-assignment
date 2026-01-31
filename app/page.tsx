@@ -1,6 +1,7 @@
 import About from "./Components/About";
 import Background from "./Components/Background";
 import FAQ from "./Components/FAQ";
+import Footer from "./Components/Footer";
 import GetStarted from "./Components/GetStarted";
 import Primary from "./Components/Primary";
 import Secondary from "./Components/Secondary";
@@ -18,18 +19,8 @@ export default function Home() {
         <FAQ />
         <Background />
         <GetStarted />
+        <Footer />
       <div style={{ height: "200vh" }} />
-
-
-      {/* Services */}
-      <section>
-        Services
-      </section>
-
-      {/* About */}
-      <section>
-        About
-      </section>
     </main>
   );
 }
