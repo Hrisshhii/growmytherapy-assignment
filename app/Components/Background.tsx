@@ -24,7 +24,7 @@ export default function Background(){
   const {ref,show}=useReveal(80);
   return (
     <section className="bg-[#e9e4dc]" ref={ref}>
-        <div className="mx-auto text-center max-w-[1000px] px-[3.75vw] py-[140px]">
+        <div className="mx-auto text-center max-w-250 px-[3.75vw] py-35">
           <Animated show={show} delay={0}>
             <h2 className="font-medium text-[clamp(2.5rem,3vw,3.25rem)] text-[#223614] mb-10">
             My Professional Background
@@ -56,11 +56,11 @@ export default function Background(){
                         </button>
                         <div
                             className={`overflow-hidden transition-all duration-500
-                                ${isOpen?"max-h-[200px] opacity-100":"max-h-0 opacity-0"}
+                                ${isOpen?"max-h-50 opacity-100":"max-h-0 opacity-0"}
                               `}
                           >
                             <div className="flex justify-center">
-                              <p className="max-w-[650px] text-[1.3rem] leading-[1.7] text-[#223614] px-4 pb-6">
+                              <p className="max-w-162.5 text-[1.3rem] leading-[1.7] text-[#223614] px-4 pb-6">
                                 {ques.answer}
                               </p>
                             </div>

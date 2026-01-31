@@ -66,7 +66,7 @@ export default function FAQ(){
                         </button>
                         <div
                           className={`overflow-hidden transition-all duration-500
-                              ${isOpen?"max-h-[200px] opacity-100":"max-h-0 opacity-0"}
+                              ${isOpen?"max-h-50 opacity-100":"max-h-0 opacity-0"}
                             `}
                         >
                           <p className="pb-6 pr-[10%] text-[1.3rem] leading-[1.7] text-[#223614]">{faq.answer}</p>
