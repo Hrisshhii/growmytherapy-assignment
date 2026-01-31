@@ -1,5 +1,7 @@
 import About from "./Components/About";
+import Background from "./Components/Background";
 import FAQ from "./Components/FAQ";
+import GetStarted from "./Components/GetStarted";
 import Primary from "./Components/Primary";
 import Secondary from "./Components/Secondary";
 import Specialties from "./Components/Specialties";
@@ -14,6 +16,8 @@ export default function Home() {
         <Tertiary />
         <About />
         <FAQ />
+        <Background />
+        <GetStarted />
       <div style={{ height: "200vh" }} />
 
 
