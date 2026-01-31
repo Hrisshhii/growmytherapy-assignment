@@ -22,20 +22,20 @@ const specialties = [
 export default function Specialties(){
   return (
     <section className="bg-[#fbf7f2]">
-      <div className="mx-auto max-w-[1600px] px-[3.75vw]  pt-[140px] pb-[120px]">
+      <div className="mx-auto max-w-[1600px] px-0 pt-[140px] pb-[120px]">
 
-        <h2 className="mb-[96px] text-center text-[3rem] font-medium text-[#223614] mb-[80px]">
+        <h2 className="text-center font-medium text-[#223614] mb-[80px] leading-[1.15] text-[clamp(2.75rem,3.5vw,4rem)]">
           My Specialties
         </h2>
 
-        <div className="grid grid-cols-1 gap-[40px] md:grid-cols-3">
+        <div className=" grid grid-cols-1 gap-[20px] sm:grid-cols-2 md:grid-cols-3">
           {specialties.map((item)=>(
-            <div key={item.title} className="border border-[#223614] bg-[#e9e4dc] p-[32] flex flex-col">
-              <h3 className="text-[1.5] font-medium text-[#223614]">{item.title}</h3>
-              <p className="mt-4 text-[1rem] leading-[1.6] max-w-[420px]">{item.text}</p>
-              <div className="mt-auto pt-[48px]">
-                <div className="mx-auto w-[260px] h-[260px] rounded-full overflow-hidden">
-                  <img src={item.image} alt="" className="w-full h-full object-cover"/>
+            <div key={item.title} className=" flex w-full h-full flex-col border border-[#223614] bg-[#e9e4dc] p-[20px] ">
+              <h2 className="p-[15px] mt-0 text-[1.25rem] font-medium text-[#223614]">{item.title}</h2>
+              <p className="mt-[10px] text-[13.7px] leading-[1.6] text-[#223614] max-w-[529px]">{item.text}</p>
+              <div className="mt-auto flex justify-center pt-[40px]">
+                <div className="w-[397px] h-[397px] rounded-full overflow-hidden">
+                  <img src={item.image} alt="" className="w-full h-full object-cover object-[65%_80%]"/>
                 </div>
               </div>
             </div>
