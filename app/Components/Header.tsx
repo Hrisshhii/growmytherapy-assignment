@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header(){
   return(
     <header className="absolute top-0 left-0 z-20 w-full bg-[#fbf7f2] pointer-events-none">
-      <div className="slide-in mx-auto max-w-375 px-[3.75vw] py-[19px] pointer-events-auto">
+      <div className="slide-in w-full px-[3.75vw] py-[19px] pointer-events-auto">
         <div className="flex items-baseline justify-between">
           <div className="header-title">
             <Link href="/" className="font-medium text-[calc((2-1)*1.2vw+1rem)] leading-none tracking-[0em] text-[#223614]">
