@@ -6,7 +6,7 @@ export default function Primary(){
   const {ref,show}=useReveal(80);
   return (
     <section className="w-full bg-[#fbf7f2] overflow-hidden" ref={ref}>
-      <div className="mx-auto max-w-450 px-[3.75vw] lg:pl-[2vw] lg:pr-[3.75vw] pt-35 pb-30">
+      <div className="mx-auto max-w-400 px-[3.75vw] lg:pl-[2vw] lg:pr-[3.75vw] pt-35 pb-30">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-[8vw] items-center">
 
         <Animated show={show} delay={0}>

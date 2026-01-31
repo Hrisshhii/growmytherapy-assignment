@@ -20,7 +20,6 @@ export default function Home() {
         <Background />
         <GetStarted />
         <Footer />
-      <div style={{ height: "200vh" }} />
     </main>
   );
 }

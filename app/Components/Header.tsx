@@ -39,7 +39,7 @@ export default function Header(){
   }, []);
 
   return(
-    <header className="header bg-transparent">
+    <header className="header bg-[#fbf7f2]">
       <div className="header-inner slide-in w-full">
         <div className="flex items-baseline justify-between">
 
