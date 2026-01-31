@@ -11,7 +11,7 @@ export default function Tertiary() {
       ref={ref}
       className="relative bg-[#c1beca] mt-[2.5vh]"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] lg:min-h-[100vh]">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] lg:min-h-screen">
 
         <Animated show={show} delay={180}>
             <div className="relative h-[60vh] lg:h-full overflow-hidden">
@@ -54,7 +54,7 @@ export default function Tertiary() {
                       transitionDelay: `${i*100}ms`
                     }}
                   >
-                    <span className="mt-[1rem] h-[4px] w-[4px] shrink-0 rounded-full bg-[#2F3F1F]/90" />
+                    <span className="mt-4 h-1 w-1 shrink-0 rounded-full bg-[#2F3F1F]/90" />
                     <span className="block">{item}</span>
                   </li>
                 ))}
@@ -70,7 +70,7 @@ export default function Tertiary() {
 
           <Animated show={show} delay={320}>
             <div className="border-t border-[#223614]/50">
-              <button className="w-full py-8 text-sm font-normal tracking-wide text-[#223614] transition-colors duration-300 hover:bg-[#223614] hover:text-white">
+              <button className="w-full py-8 text-sm font-normal tracking-wide text-[#223614] transition-colors duration-300 hover:bg-[#223614] hover:text-white cursor-pointer">
                 WORK WITH ME
               </button>
             </div>

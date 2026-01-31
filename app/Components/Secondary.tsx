@@ -39,7 +39,7 @@ export default function Secondary() {
 
           <Animated show={show} delay={320}>
             <div className="border-t border-[#223614]/40">
-              <button className="w-full py-6 text-sm font-medium tracking-wide text-[#223614] transition-colors duration-300 hover:bg-[#223614] hover:text-white">
+              <button className="w-full py-6 text-sm font-medium tracking-wide text-[#223614] transition-colors duration-300 hover:bg-[#223614] hover:text-white cursor-pointer">
                 GET IN TOUCH →
               </button>
             </div>
