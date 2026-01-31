@@ -27,7 +27,7 @@ export default function Specialties(){
   const {ref,show}=useReveal(80);
   return (
     <section className="bg-[#fbf7f2]" ref={ref}>
-      <div className="mx-auto max-w-400 px-[3.75vw] lg:pl-[2vw] lg:pr-[3.75vw] pt-35 pb-40">
+      <div className="mx-auto max-w-450 px-[3.75vw] lg:pl-[2vw] lg:pr-[3.75vw] pt-35 pb-40">
 
         <h2 className={`text-center font-medium text-[#223614] mb-20 leading-[1.15] text-[clamp(2.75rem,3.5vw,4rem)]
         transition-opacity duration-500 ease-out

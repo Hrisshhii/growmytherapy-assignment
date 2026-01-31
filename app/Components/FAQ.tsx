@@ -23,7 +23,7 @@ export default function FAQ(){
   const [openIndex,setOpenIndex]=useState<number | null>(null);
   return (
     <section className="bg-[#fbf7f2]" ref={ref}>
-      <div className="mx-auto max-w-400 px-4 lg:px-12 pt-35 pb-40">
+      <div className="mx-auto max-w-450 px-4 lg:px-12 pt-35 pb-40">
         <div className="grid grid-col-1 lg:grid-cols-[1fr_1fr] gap-10 items-center mx-0">
           <div className="relative flex justify-center">
             <Animated show={show} delay={120}>

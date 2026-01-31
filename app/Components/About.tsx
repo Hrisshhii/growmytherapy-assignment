@@ -6,7 +6,7 @@ export default function About(){
   const {ref,show}=useReveal(80);
   return (
     <section className="bg-[#e9e4dc]" ref={ref}>
-      <div className="mx-auto max-w-400 px-4 lg:px-12 pt-35 pb-40">
+      <div className="mx-auto max-w-450 px-4 lg:px-12 pt-35 pb-40">
         <div className="grid grid-col-1 lg:grid-cols-[1fr_1fr] gap-10 items-center mx-0">
           <div>
             <div className="min-w-3xl">
