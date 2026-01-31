@@ -1,6 +1,4 @@
 "use client";
-
-import { useEffect, useState } from "react";
 import { useReveal } from "./hooks/useReveal";
 import Animated from "./hooks/Animated";
 
@@ -12,8 +10,8 @@ export default function Primary(){
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-[8vw] items-center">
 
         <Animated show={show} delay={0}>
-          <div className="relative overflow-hidden rounded-t-[999px] lg:translate-x-[-5vw]">
-            <img src="/hero-1.jpg" alt="" className="w-full h-full object-cover"/>
+          <div className="relative w-full h-full overflow-hidden rounded-t-[999px] lg:translate-x-[-5vw]">
+            <img src="/hero-1.jpg" alt="" className=" object-cover"/>
           </div>
         </Animated>
 

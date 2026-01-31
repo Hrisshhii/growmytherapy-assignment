@@ -1,45 +1,63 @@
 "use client";
 import Animated from "./hooks/Animated";
 import { useReveal } from "./hooks/useReveal";
+import Image from "next/image";
 
-export default function Secondary(){
-  const {ref,show}=useReveal(120);
+export default function Secondary() {
+  const { ref, show } = useReveal(120);
+
   return (
-    <section className="relative bg-[#e9e5df] -mt-[13vh]" ref={ref}>
-      <div className="mx-auto max-w-[1600px] px-[3.75vw] lg:pl-[2vw] lg:pr-[3.75vw] pt-35 pb-30">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-[8vw] items-center">
+    <section
+      ref={ref}
+      className="relative bg-[#e9e5df] -mt-[13vh]"
+    >
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] lg:h-[85vh]">
+        
+        <div className="grid grid-rows-[1fr_auto]">
 
-          <div className="text-center md:text-left">
-            <Animated show={show} delay={0}>
-              <h1 className="font-medium text-[#223614] leading-[1.15] text-[clamp(2.75rem,3.8vw,4rem)]">
-                Live a fulfilling life
-              </h1>
-            </Animated>
-            <Animated show={show} delay={120}>
-              <p className="mt-6 text-lg text-gray-700">
-                {`Life can be challenging—especially when you're trying to balance your personal and professional life. `}
-              </p>
-            </Animated>
-            <Animated show={show} delay={220}>
-              <p className="mt-4 text-lg text-gray-700">
-                {`It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.`}
-              </p>
-            </Animated>
-            <Animated show={show} delay={320}>
-              <div className="mt-8">
-                <button className="border px-6 py-3 text-sm tracking-wide">
-                  Get in touch
-                </button>
-              </div>
-            </Animated>
+          <div className="flex items-center justify-center pt-[4vh]">
+            <div className="max-w-[800px]">
+              <Animated show={show} delay={0}>
+                <h1 className="font-medium text-[#223614] leading-[1.15] text-[clamp(3rem,4vw,4.25rem)]">
+                  Live a fulfilling life
+                </h1>
+              </Animated>
+
+              <Animated show={show} delay={120}>
+                <p className="mt-6 text-[1.25rem] leading-[1.7] text-[#223614]">
+                  {`Life can be challenging—especially when you're trying to balance your personal and professional life.`}
+                </p>
+              </Animated>
+
+              <Animated show={show} delay={220}>
+                <p className="mt-4 text-[1.25rem] leading-[1.7] text-[#223614]">
+                  {`It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.`}
+                </p>
+              </Animated>
+            </div>
           </div>
-          <Animated show={show} delay={180}>
-            <div className="h-[70vh] md:h-[80vh] w-full overflow-hidden">
-              <img src="/hero-2.jpg" alt="" className="h-full w-full object-cover"/>
+
+          <Animated show={show} delay={320}>
+            <div className="border-t border-[#223614]/40">
+              <button className="w-full py-6 text-sm font-medium tracking-wide text-[#223614] transition-colors duration-300 hover:bg-[#223614] hover:text-white">
+                GET IN TOUCH →
+              </button>
             </div>
           </Animated>
         </div>
+
+        <Animated show={show} delay={180}>
+          <div className="relative h-[60vh] lg:h-full overflow-hidden">
+            <Image
+              src="/hero-2.jpg"
+              alt=""
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </Animated>
       </div>
     </section>
-  )
+  );
 }
