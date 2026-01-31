@@ -1,3 +1,7 @@
+"use client";
+
+import { useReveal } from "./hooks/useReveal";
+import Animated from "./hooks/Animated";
 const specialties = [
   {
     title: "Self-Esteem",
@@ -20,24 +24,31 @@ const specialties = [
 ];
 
 export default function Specialties(){
+  const {ref,show}=useReveal(80);
   return (
-    <section className="bg-[#fbf7f2]">
+    <section className="bg-[#fbf7f2]" ref={ref}>
       <div className="mx-auto max-w-[1600px] px-0 pt-[140px] pb-[120px]">
 
-        <h2 className="text-center font-medium text-[#223614] mb-[80px] leading-[1.15] text-[clamp(2.75rem,3.5vw,4rem)]">
+        <h2 className={`text-center font-medium text-[#223614] mb-[80px] leading-[1.15] text-[clamp(2.75rem,3.5vw,4rem)]
+        transition-opacity duration-500 ease-out
+          ${show? "opacity-100":"opacity-0"}`}>
           My Specialties
         </h2>
 
         <div className=" grid grid-cols-1 gap-[20px] sm:grid-cols-2 md:grid-cols-3">
           {specialties.map((item)=>(
             <div key={item.title} className=" flex w-full h-full flex-col border border-[#223614] bg-[#e9e4dc] p-[20px] ">
-              <h2 className="p-[15px] mt-0 text-[1.25rem] font-medium text-[#223614]">{item.title}</h2>
+              <Animated show={show} delay={120}>
+                <h2 className="p-[15px] mt-0 text-[1.25rem] font-medium text-[#223614]">{item.title}</h2>
+              </Animated>
               <p className="mt-[10px] text-[13.7px] leading-[1.6] text-[#223614] max-w-[529px]">{item.text}</p>
-              <div className="mt-auto flex justify-center pt-[40px]">
-                <div className="w-[397px] h-[397px] rounded-full overflow-hidden">
-                  <img src={item.image} alt="" className="w-full h-full object-cover object-[65%_80%]"/>
+              <Animated show={show} delay={320}>
+                <div className="mt-auto flex justify-center pt-[40px]">
+                  <div className="w-[397px] h-[397px] rounded-full overflow-hidden">
+                    <img src={item.image} alt="" className="w-full h-full object-cover object-[65%_80%]"/>
+                  </div>
                 </div>
-              </div>
+              </Animated>
             </div>
           ))}
         </div>
