@@ -1,5 +1,5 @@
 "use client";
-
+/* eslint-disable @next/next/no-img-element */
 import { useReveal } from "./hooks/useReveal";
 import Animated from "./hooks/Animated";
 const specialties = [
