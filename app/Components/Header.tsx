@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Animated from "./hooks/Animated";
 import { useReveal } from "./hooks/useReveal";
+import { usePathname } from "next/navigation";
 
 function MenuToggle({
   open,
@@ -37,6 +38,9 @@ function MenuToggle({
 
 
 export default function Header() {
+  const pathname=usePathname();
+  const isContact=pathname==="/contact";
+  const isBlog=pathname==="/blog";
   const { ref, show } = useReveal(80);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -95,7 +99,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="header bg-secondary text-primary relative z-50">
+      <header className={`header text-primary relative z-50 ${isContact ? "bg-accent-soft": "bg-secondary"}`}>
         <div className="header-inner slide-in w-full">
           <div className={`${headerBar} md:flex-row flex-row-reverse`}>
             <Link
@@ -106,8 +110,8 @@ export default function Header() {
             </Link>
 
             <nav className="hidden md:flex gap-12 leading-tight text-primary text-[calc((1.2-1)*1.2vw+1rem)]">
-              <Link href="/blog">Blog</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/blog" className={`${isBlog?"underline underline-offset-8":"hover:opacity-60"}`}>Blog</Link>
+              <Link href="/contact"className={`${isContact?"underline underline-offset-8":"hover:opacity-60"}`}>Contact</Link>
             </nav>
             <div className="md:hidden">
               <MenuToggle open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
@@ -138,10 +142,10 @@ export default function Header() {
 
         <Animated show={menuOpen} delay={120}>
           <div className="flex flex-col items-center justify-center gap-10 text-3xl text-primary"  style={{height:"calc(100vh - 64px)"}}>
-            <Link href="/blog" onClick={() => setMenuOpen(false)} className="hover:opacity-40">
+            <Link href="/blog" onClick={() => setMenuOpen(false)} className={isBlog ? "underline" : "hover:opacity-40"}>
               Blog
             </Link>
-            <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:opacity-40">
+            <Link href="/contact" onClick={() => setMenuOpen(false)} className={isContact ? "underline" : "hover:opacity-40"}>
               Contact
             </Link>
           </div>
