@@ -26,8 +26,8 @@ export default function ContactMap(){
             </div>
           </Animated>
         
-          <div className="w-full overflow-hidden h-[420px] sm:h-[500px]">
-            <iframe src="https://www.google.com/maps?q=44.8873874,-93.2217537&z=14&output=embed" 
+          <div className="relative w-full overflow-hidden h-105 sm:h-125">
+            <iframe src="https://www.google.com/maps?q=44.977753,-93.265011&z=12&output=embed" 
             title="Office Location" 
             className="w-full h-full border-0 grayscale contrast-[1.05]" 
             loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
