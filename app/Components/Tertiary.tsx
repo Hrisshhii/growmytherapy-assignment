@@ -14,7 +14,7 @@ export default function Tertiary() {
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] lg:min-h-screen">
 
         <Animated show={show} delay={180}>
-            <div className="relative h-[60vh] lg:min-h-full overflow-hidden">
+            <div className="relative h-[34vh] sm:h-[50vh] lg:min-h-full overflow-hidden">
               <Image
                 src="/hero-3.jpg"
                 alt=""
@@ -27,8 +27,8 @@ export default function Tertiary() {
         
         <div className="grid grid-rows-[1fr_auto]">
 
-          <div className="flex items-center justify-center">
-            <div className="max-w-200">
+          <div className="flex pt-8 sm:pt-0 sm:items-center justify-center">
+            <div className="max-w-200 px-6 sm:px-0">
               <Animated show={show} delay={0}>
                 <h1 className="mb-2 heading-lg text-primary tracking-tight">
                   You don&apos;t have to do this all{" "}
@@ -36,10 +36,10 @@ export default function Tertiary() {
                 </h1>
               </Animated>
 
-              <p className="mt-6 body-lg text-primary">
+              <p className="mt-4 body-lg text-primary">
                 {`If you are facing any of these, there's hope:`}
               </p>
-              <ul className="mt-10 mb-10 pl-6 space-y-2 text-[1.35rem] leading-[1.75] text-primary">
+              <ul className="mt-6 mb-6 pl-6 space-y-2 text-[1.35rem] leading-[1.75] text-primary">
                 {[
                   "Persistent feelings of sadness or hopelessness",
                   "Trouble focusing or making decisions",
@@ -47,7 +47,7 @@ export default function Tertiary() {
                   "Feeling constantly exhausted or unmotivated",
                   "A pervasive sense of being overwhelmed"
                 ].map((item,i)=>(
-                  <li key={i} className="flex gap-3 items-start transition-all duration-500 ease-out"
+                  <li key={i} className="flex gap-0.2 sm:gap-3 items-start transition-all duration-500 ease-out"
                     style={{
                       opacity: show? 1:0,
                       transform: show?"translateY(10px)":"translateY(12px)",
@@ -61,7 +61,7 @@ export default function Tertiary() {
               </ul>
 
               <Animated show={show} delay={220}>
-                <p className="mt-4 body-lg text-primary">
+                <p className="mt-3 sm:mt-4 body-lg text-primary">
                   {`With empathy and guidance, we'll work together to navigate the challenges life throws your way.`}
                 </p>
               </Animated>
@@ -69,7 +69,7 @@ export default function Tertiary() {
           </div>
 
           <Animated show={show} delay={320}>
-            <div className="border-t border-primary/50">
+            <div className="border-t border-primary/50 mt-10 sm:mt-0">
               <button className="w-full py-8 text-sm font-medium tracking-wide text-primary transition-colors duration-500 ease-in-out hover:bg-primary hover:text-secondary cursor-pointer">
                 WORK WITH ME
               </button>
