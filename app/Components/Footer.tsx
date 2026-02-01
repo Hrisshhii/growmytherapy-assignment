@@ -20,7 +20,7 @@ export default function Footer() {
                 Lilac Template
               </h3>
 
-              <p className="mt-4 body-sm">
+              <p className="mt-3 sm:mt-4 body-sm">
                 123 Example Road <br />
                 Minneapolis, MN
               </p>
