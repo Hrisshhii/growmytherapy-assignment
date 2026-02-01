@@ -23,7 +23,7 @@ export default function FAQ(){
   const {ref,show}=useReveal(80);
   const [openIndex,setOpenIndex]=useState<number | null>(null);
   return (
-    <section className="bg-[#fbf7f2]" ref={ref}>
+    <section className="bg-secondary" ref={ref}>
       <div className="mx-auto max-w-450 px-4 lg:px-12 pt-35 pb-40">
         <div className="grid grid-col-1 lg:grid-cols-[1fr_1fr] gap-10 items-center mx-0">
           <div className="relative flex justify-center">
@@ -36,46 +36,45 @@ export default function FAQ(){
           <div>
             <div className="min-w-3xl">
               <Animated show={show} delay={120}>
-                <h2 className="font-medium text-[#223614] leading-[1.15] text-[clamp(2.75rem,3.5vw,4rem)] mb-20">
+                <h2 className="heading-xl text-primary mb-20">
                   FAQs
                 </h2>
               </Animated>
               
-              <div className="border-t border-[#223614]/40">
+              <div className="border-t border-primary/40">
                 {faqs.map((faq,i)=>{
                   const isOpen=openIndex===i;
                   return(
                     <Animated key={i} show={show} delay={0.1+i*0.25}>
                       <div>
-                        <div key={i} className="border-b border-[#223614]/40 my-0">
-                        <button 
-                          onClick={()=>setOpenIndex(isOpen?null:i)}
-                          className="w-full flex items-center py-4 text-left cursor-pointer"
-                        >
-                          <span className="relative w-6 h-6 mr-2 flex items-center justify-center">
-                            <span className="absolute w-6 h-[1.5px] bg-[#223614]" />
+                        <div key={i} className="border-b border-primary/40 my-0">
+                          <button 
+                            onClick={()=>setOpenIndex(isOpen?null:i)}
+                            className="w-full flex items-center py-4 text-left cursor-pointer"
+                          >
+                            <span className="relative w-6 h-6 mr-2 flex items-center justify-center">
+                              <span className="absolute w-6 h-[1.5px] bg-primary" />
 
-                            <span
-                              className={`absolute h-6 w-[1.5px] bg-[#223614]
-                                transition-transform duration-300 ease-in-out
-                                origin-center
-                                ${isOpen ? "rotate-90" : "rotate-180"}
+                              <span
+                                className={`absolute h-6 w-[1.5px] bg-primary
+                                  transition-transform duration-300 ease-in-out
+                                  origin-center
+                                  ${isOpen ? "rotate-90" : "rotate-180"}
+                                `}
+                              />
+                            </span>
+                            <span className="heading-md text-primary ml-2">{faq.question}</span>
+                          </button>
+                          <div
+                            className={`overflow-hidden transition-all duration-500
+                                ${isOpen?"max-h-50 opacity-100":"max-h-0 opacity-0"}
                               `}
-                            />
-                          </span>
-                          <span className="font-medium text-[#223614] leading-[1.15] text-[clamp(1.75rem,2.5vw,3rem)] ml-2">{faq.question}</span>
-                        </button>
-                        <div
-                          className={`overflow-hidden transition-all duration-500
-                              ${isOpen?"max-h-50 opacity-100":"max-h-0 opacity-0"}
-                            `}
-                        >
-                          <p className="pb-6 pr-[10%] text-[1.3rem] leading-[1.7] text-[#223614]">{faq.answer}</p>
+                          >
+                            <p className="pb-6 pr-[10%] text-[1.3rem] leading-[1.7] text-primary">{faq.answer}</p>
+                          </div>
                         </div>
-                    </div>
                       </div>
                     </Animated>
-                  
                   )
                 })}
               </div>

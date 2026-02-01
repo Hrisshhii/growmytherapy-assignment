@@ -24,13 +24,25 @@ body {
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #223614;
+  --color-secondary: #fbf7f2;
+  --color-muted: #e9e4dc;
+  --color-accent: #7b7a43;
+  --color-accent-soft: #c1beca;
 }
 
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* Brand → Tailwind */
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-muted: var(--color-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+
+  /* Semantic defaults */
+  --color-background: var(--color-secondary);
+  --color-foreground: var(--color-primary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,4 +108,53 @@ body {
 
 .animate-slide {
   animation: slideUp 0.8s ease forwards;
+}
+
+/*Typography Scale*/
+
+@layer utilities {
+  .heading-xl {
+    @apply font-medium text-[clamp(2.75rem,3.5vw,4rem)] leading-[1.15];
+  }
+  .heading-lg {
+    @apply font-medium text-[clamp(2.25rem,4vw,4.1rem)] leading-[1.15];
+  }
+  .heading-md {
+    @apply font-medium text-[clamp(1.75rem,2.5vw,3rem)] leading-[1.15];
+  }
+  .body-lg {
+    @apply text-[1.35rem] leading-[1.7];
+  }
+  .body-md {
+    @apply text-[1.25rem] leading-[1.7];
+  }
+  .body-sm {
+    @apply text-[1.05rem] leading-[1.7];
+  }
+  .section-padding {
+    @apply px-[4vw] sm:px-[3.75vw] lg:px-[2vw] pt-24 pb-32;
+  }
+  .section-x {
+    @apply px-[3.75vw] lg:pl-[2vw] lg:pr-[3.75vw];
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center
+    border border-primary
+    px-8 py-3
+    text-sm tracking-wide
+    text-primary
+    transition-colors duration-500 ease-in-out
+    hover:bg-primary hover:text-secondary
+    hover:cursor-pointer;
+  }
+  .btn-light {
+    @apply inline-flex items-center justify-center
+    border border-secondary
+    px-7 py-3
+    text-sm tracking-wide
+    text-secondary
+    transition-colors duration-500 ease-in-out
+    hover:bg-secondary hover:text-accent
+    hover:cursor-pointer;
+  }
 }

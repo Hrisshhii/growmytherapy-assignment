@@ -95,17 +95,17 @@ export default function Header() {
 
   return (
     <>
-      <header className="header bg-[#fbf7f2] relative z-50">
+      <header className="header bg-secondary text-primary relative z-50">
         <div className="header-inner slide-in w-full">
           <div className={`${headerBar} md:flex-row flex-row-reverse`}>
             <Link
               href="/"
-              className="font-medium leading-tight text-[calc((2-1)*1.2vw+1rem)] text-[#223614]"
+              className="font-medium leading-tight text-[calc((2-1)*1.2vw+1rem)] text-primary"
             >
               Lilac Template
             </Link>
 
-            <nav className="hidden md:flex gap-12 leading-tight text-[#223614] text-[calc((1.2-1)*1.2vw+1rem)]">
+            <nav className="hidden md:flex gap-12 leading-tight text-primary text-[calc((1.2-1)*1.2vw+1rem)]">
               <Link href="/blog">Blog</Link>
               <Link href="/contact">Contact</Link>
             </nav>
@@ -117,7 +117,7 @@ export default function Header() {
       </header>
 
       <div
-        className={`fixed inset-0 bg-[#fbf7f2] z-60 transition-opacity ${
+        className={`fixed inset-0 bg-secondary z-60 transition-opacity ${
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
@@ -131,13 +131,13 @@ export default function Header() {
             <MenuToggle open={menuOpen} onClick={() => setMenuOpen(false)} />
           </div>
 
-          <Link href="/" onClick={() => setMenuOpen(false)} className="font-medium text-[calc((2-1)*1.2vw+1rem)]">
+          <Link href="/" onClick={() => setMenuOpen(false)} className="font-medium text-[calc((2-1)*1.2vw+1rem)] text-primary">
             Lilac Template
           </Link>
         </div>
 
         <Animated show={menuOpen} delay={120}>
-          <div className="flex flex-col items-center justify-center gap-10 text-3xl text-[#223614]"  style={{height:"calc(100vh - 64px)"}}>
+          <div className="flex flex-col items-center justify-center gap-10 text-3xl text-primary"  style={{height:"calc(100vh - 64px)"}}>
             <Link href="/blog" onClick={() => setMenuOpen(false)} className="hover:opacity-40">
               Blog
             </Link>

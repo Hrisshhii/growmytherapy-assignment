@@ -7,7 +7,7 @@ import FooterBottom from "./FooterBottom";
 export default function Footer() {
   const {ref,show}=useReveal(80);
   return (
-    <footer className="bg-[#fbf7f2] text-[#223614]" ref={ref}>
+    <footer className="bg-secondary text-primary" ref={ref}>
       <div className="mx-auto max-w-450 px-8 md:px-12 lg:px-16 pt-24 pb-20">
 
         {/* OUTER ROW */}
@@ -16,16 +16,16 @@ export default function Footer() {
 
             {/* LEFT BLOCK */}
             <div>
-              <h3 className="font-medium text-[clamp(2.5rem,3vw,3.25rem)]">
+              <h3 className="font-medium text-[clamp(2.5rem,3vw,3.25rem)] text-primary">
                 Lilac Template
               </h3>
 
-              <p className="mt-4 text-[1.05rem] leading-[1.7]">
+              <p className="mt-4 body-sm">
                 123 Example Road <br />
                 Minneapolis, MN
               </p>
 
-              <div className="mt-6 space-y-2 text-[1.05rem]">
+              <div className="mt-6 space-y-2 body-sm">
                 <a href="mailto:email@example.com" className="underline block">
                   email@example.com
                 </a>
@@ -40,7 +40,7 @@ export default function Footer() {
 
               {/* HOURS */}
               <div className="mr-15">
-                <h4 className="font-medium text-[clamp(1.5rem,2vw,2.5rem)]">
+                <h4 className="font-medium text-[clamp(1.5rem,2vw,2.5rem)] text-primary">
                   Hours
                 </h4>
                 <p className="mt-2 text-[1.05rem] leading-[1.7]">
@@ -54,7 +54,7 @@ export default function Footer() {
                 <h4 className="font-medium text-[clamp(1.5rem,2vw,2.5rem)]">
                   Find
                 </h4>
-                <ul className="mt-2 space-y-3 text-[1.05rem]">
+                <ul className="mt-2 space-y-3 body-sm">
                   <li><Link href="/" className="underline">Home</Link></li>
                   <li><Link href="/contact" className="underline">Contact</Link></li>
                   <li><Link href="/blog" className="underline">Blog</Link></li>

@@ -9,7 +9,7 @@ export default function Tertiary() {
   return (
     <section
       ref={ref}
-      className="relative bg-[#c1beca] mt-[2.5vh]"
+      className="relative bg-accent-soft mt-[2.5vh]"
     >
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] lg:min-h-screen">
 
@@ -30,16 +30,16 @@ export default function Tertiary() {
           <div className="flex items-center justify-center">
             <div className="max-w-200">
               <Animated show={show} delay={0}>
-                <h1 className="mb-2 font-medium text-[#223614] leading-[1.15] tracking-tight text-[clamp(2.25rem,4vw,4.1rem)]">
+                <h1 className="mb-2 heading-lg text-primary tracking-tight">
                   You don&apos;t have to do this all{" "}
                   <span className="italic">alone</span>.
                 </h1>
               </Animated>
 
-              <p className="mt-6 font-normal text-[1.35rem] leading-[1.7] text-[#223614]">
+              <p className="mt-6 body-lg text-primary">
                 {`If you are facing any of these, there's hope:`}
               </p>
-              <ul className="mt-10 mb-10 pl-6 space-y-2 font-normal text-[1.35rem] leading-[1.75] text-[#223614]">
+              <ul className="mt-10 mb-10 pl-6 space-y-2 text-[1.35rem] leading-[1.75] text-primary">
                 {[
                   "Persistent feelings of sadness or hopelessness",
                   "Trouble focusing or making decisions",
@@ -54,14 +54,14 @@ export default function Tertiary() {
                       transitionDelay: `${i*100}ms`
                     }}
                   >
-                    <span className="mt-4 h-1 w-1 shrink-0 rounded-full bg-[#2F3F1F]/90" />
+                    <span className="mt-4 h-1 w-1 shrink-0 rounded-full bg-primary/90" />
                     <span className="block">{item}</span>
                   </li>
                 ))}
               </ul>
 
               <Animated show={show} delay={220}>
-                <p className="font-normal mt-4 text-[1.35rem] leading-[1.7] text-[#223614]">
+                <p className="mt-4 body-lg text-primary">
                   {`With empathy and guidance, we'll work together to navigate the challenges life throws your way.`}
                 </p>
               </Animated>
@@ -69,8 +69,8 @@ export default function Tertiary() {
           </div>
 
           <Animated show={show} delay={320}>
-            <div className="border-t border-[#223614]/50">
-              <button className="w-full py-8 text-sm font-normal tracking-wide text-[#223614] transition-colors duration-300 hover:bg-[#223614] hover:text-white cursor-pointer">
+            <div className="border-t border-primary/50">
+              <button className="w-full py-8 text-sm font-medium tracking-wide text-primary transition-colors duration-500 ease-in-out hover:bg-primary hover:text-secondary cursor-pointer">
                 WORK WITH ME
               </button>
             </div>

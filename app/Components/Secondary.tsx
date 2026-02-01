@@ -9,7 +9,7 @@ export default function Secondary() {
   return (
     <section
       ref={ref}
-      className="relative bg-[#e9e5df] -mt-[13vh]"
+      className="relative bg-muted -mt-[13vh]"
     >
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] lg:min-h-[85vh]">
         
@@ -18,19 +18,19 @@ export default function Secondary() {
           <div className="flex items-center justify-center pt-[4vh]">
             <div className="max-w-200">
               <Animated show={show} delay={0}>
-                <h1 className="font-medium text-[#223614] leading-[1.15] text-[clamp(3rem,4vw,4.25rem)]">
+                <h1 className="heading-lg text-primary">
                   Live a fulfilling life
                 </h1>
               </Animated>
 
               <Animated show={show} delay={120}>
-                <p className="mt-6 text-[1.25rem] leading-[1.7] text-[#223614]">
+                <p className="mt-6 body-md text-primary">
                   {`Life can be challenging—especially when you're trying to balance your personal and professional life.`}
                 </p>
               </Animated>
 
               <Animated show={show} delay={220}>
-                <p className="mt-4 text-[1.25rem] leading-[1.7] text-[#223614]">
+                <p className="mt-4 body-md text-primary]">
                   {`It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.`}
                 </p>
               </Animated>
@@ -38,8 +38,8 @@ export default function Secondary() {
           </div>
 
           <Animated show={show} delay={320}>
-            <div className="border-t border-[#223614]/40">
-              <button className="w-full py-6 text-sm font-medium tracking-wide text-[#223614] transition-colors duration-300 hover:bg-[#223614] hover:text-white cursor-pointer">
+            <div className="border-t border-primary/40">
+              <button className="w-full py-6 text-sm font-medium tracking-wide text-primary transition-colors duration-500 ease-in-out hover:bg-primary hover:text-secondary cursor-pointer">
                 GET IN TOUCH →
               </button>
             </div>

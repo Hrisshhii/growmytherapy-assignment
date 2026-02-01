@@ -5,8 +5,8 @@ import Animated from "./hooks/Animated";
 export default function FooterBottom() {
   const {ref,show}=useReveal(80);
   return (
-    <div className="bg-[#e9e4dc]" ref={ref as React.RefObject<HTMLDivElement>}>
-      <div className="mx-auto max-w-450 px-[3.75vw] py-10 text-center text-[0.95rem] text-[#223614]">
+    <div className="bg-muted" ref={ref as React.RefObject<HTMLDivElement>}>
+      <div className="mx-auto max-w-450 section-x py-10 text-center text-[0.95rem] text-primary">
         <Animated show={show} delay={120}>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 underline mb-6">
             <a href="/privacy-policy" className="underline text-black text-[calc(0.2vw+0.8rem)]">Privacy & Cookies Policy</a>
