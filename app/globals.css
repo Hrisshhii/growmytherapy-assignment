@@ -104,6 +104,16 @@ body {
   }
 }
 
+.fade-left{
+  transform:translateX(-12px);
+  opacity: 0;
+  transition: transform 0.6s ease,opacity 0.6s ease;
+}
+.fade-left.show{
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .animate-slide {
   animation: slideUp 0.8s ease forwards;
 }
