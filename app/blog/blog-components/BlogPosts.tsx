@@ -9,22 +9,22 @@ const posts=[
     title:"Blog Post One",
     date:"3/11/19",
     image:"/hero-2.jpg",
-    link:"/blog/blog-post-title-one-tdzcp"
+    link:"/blog/blog-post-title-one"
   },{
     title:"Blog Post Two",
     date:"3/11/19",
     image:"/hero-3.jpg",
-    link:"/blog/blog-post-title-two-4bk3c"
+    link:"/blog/blog-post-title-two"
   },{
     title:"Blog Post Three",
     date:"3/11/19",
     image:"/about-circle.jpg",
-    link:"/blog/blog-post-title-three-mmwc5"
+    link:"/blog/blog-post-title-three"
   },{
     title:"Blog Post Four",
     date:"3/11/19",
     image:"/about-main.jpg",
-    link:"/blog/blog-post-title-four-nydcr"
+    link:"/blog/blog-post-title-four"
   }
 ];
 
