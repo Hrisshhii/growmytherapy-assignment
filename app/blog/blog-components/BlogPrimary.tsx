@@ -14,7 +14,7 @@ export default function BlogPrimary(){
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
           <Animated show={show} delay={120}>
             <div className="flex justify-center lg:justify-start lg:ml-30">
-              <div className="relative w-[38%] max-w-92.5 sm:w-full sm:max-w-[550px] sm:h-[520px] md:h-[740px] lg:h-[820px] overflow-hidden rounded-t-full">
+              <div className="relative w-[38%] max-w-92.5 sm:w-full sm:max-w-137.5 sm:h-130 md:h-185 lg:h-205 overflow-hidden rounded-t-full">
                 <img
                   src="/blog-1.jpg"
                   alt="Reading and reflection"

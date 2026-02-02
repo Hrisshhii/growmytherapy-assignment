@@ -38,7 +38,7 @@ export default function BlogPosts(){
             <article key={i} className="group">
               <Animated show={show} delay={120} >
                 <a href={post.link} className="block">
-                  <div className="aspect-[4/3] overflow-hidden mb-6">
+                  <div className="aspect-4/3 overflow-hidden mb-6">
                     <img src={post.image} alt="" className="w-full h-full object-cover" />
                   </div>
                 </a>
