@@ -8,9 +8,11 @@ export default function Subscribe(){
   const {ref,show}=useReveal(80);
   const [email,setEmail]=useState("");
   const [status,setStatus]=useState<"idle" | "loading" | "success">("idle");
+  const [submitted, setSubmitted] = useState(false);
 
   const onSubmit=(e:React.FormEvent)=>{
     e.preventDefault();
+    setSubmitted(true);
     if(!email) return;
     setStatus("loading");
     setTimeout(()=>{setStatus("success")},1200);
@@ -36,17 +38,25 @@ export default function Subscribe(){
               <p className="text-white/90 mb-11 text-[clamp(1rem,1.15vw,1.25rem)]">
                 Sign up with your email address to receive news and updates.
               </p>
-              <form onSubmit={onSubmit} className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
-                <input type="email" placeholder="Email Address" value={email}
-                 className="w-full sm:w-[320px] px-5 py-4 text-gray outline-none bg-white text-[clamp(1rem,1.15vw,1.25rem)]"
-                 onChange={e=>setEmail(e.target.value)}
-                />
+              
+              <form onSubmit={onSubmit} className="flex flex-col items-center sm:flex-row justify-center gap-4 mb-6">
+                <div className="w-full max-w-[320px]">
+                  {submitted && !email && status==="idle" && (
+                    <p className="bg-red-200 text-red-700 text-sm px-4 py-2 mb-4 rounded text-center">Email Address is required.</p>
+                  )}
+                  <input type="email" placeholder="Email Address" value={email}
+                  className="w-full sm:w-[320px] px-5 py-5 text-gray outline-none bg-white text-[clamp(1rem,1.15vw,1.25rem)] focus:ring-0 focus:outline-none"
+                  onChange={e=>setEmail(e.target.value)}
+                  />
+                </div>
+                
                 <Animated show={show} delay={220}>
-                  <button className="px-8 pt-6 pb-6 border border-white text-white hover:bg-gray-400 hover:border-gray-400 hover:text-black transition disabled:opacity-60 cursor-pointer">
-                    {status==="loading"?"...":"SIGN UP"}
+                  <button type="submit" disabled={status==="loading"} className="px-8 pt-5.5 pb-5.5 border border-white text-white hover:bg-gray-400 hover:border-gray-400 hover:text-black transition disabled:opacity-60 cursor-pointer flex items-center justify-center">
+                    {status==="loading"?(
+                      <span className="h-5 w-5 border-2 border-white border-t-transprent rounded-full animate-spin" />
+                    ):("SIGN UP")}
                   </button>
                 </Animated>
-                
               </form>
               <p className="text-white text-bold text-[1rem] mt-10">We respect your privacy.</p>
             </>
