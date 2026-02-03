@@ -23,7 +23,7 @@ export default function FooterBottom() {
         <p className={`mt-20 sm:mt-30 text-[calc(0.2vw+0.8rem)] transition-opacity duration-700 ease-in-out
             ${show? "opacity-100":"opacity-0"}
           `}>
-          All Rights Reserved © 2024 Your Business Name Here, LLC.
+          All Rights Reserved © © 2026 Dr. Maya Reynolds, PsyD.
         </p>
 
       </div>

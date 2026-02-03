@@ -15,17 +15,18 @@ export default function Footer() {
 
             <div>
               <h3 className="font-medium text-[clamp(2.5rem,3vw,3.25rem)] text-primary">
-                Lilac Template
+                Dr. Maya Reynolds, PsyD
               </h3>
+              <p>Licensed Clinical Psychologist</p>
 
               <p className="mt-3 sm:mt-4 text-[1.3rem]">
-                123 Example Road <br />
-                Minneapolis, MN
+                123th Street 45 W<br/>
+                Santa Monica, CA 90401
               </p>
 
               <div className="mt-6 space-y-2 text-[1.3rem]">
                 <a href="mailto:email@example.com" className="underline block">
-                  email@example.com
+                  drmayareynolds@example.com
                 </a>
                 <a href="tel:5555555555" className="underline block">
                   (555) 555-5555
