@@ -44,7 +44,7 @@ export default function Specialties(){
               <p className="mt-2.5 text-[13.7px] leading-[1.6] text-primary sm:max-w-132.25">{item.text}</p>
               <Animated show={show} delay={320}>
                 <div className="mt-auto flex justify-center pt-10">
-                  <div className="w-100 h-100 rounded-full overflow-hidden">
+                  <div className="w-45 h-45 sm:w-100 sm:h-100 rounded-full overflow-hidden">
                     <img src={item.image} alt="" className="w-full h-full object-cover object-[65%_80%]"/>
                   </div>
                 </div>
