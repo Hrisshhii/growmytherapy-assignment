@@ -4,21 +4,21 @@ import { useReveal } from "./hooks/useReveal";
 import Animated from "./hooks/Animated";
 const specialties = [
   {
-    title: "Self-Esteem",
+    title: "Anxiety & Chronic Stress",
     text:
-      "Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.",
+      "Persistent worry, racing thoughts and emotional tension can make daily life feel exhausting; even when everything appears “fine” on the outside. Together, we work to understand the patterns driving your anxiety while building practical tools to help you feel more grounded, present and in control.",
     image: "/specialty-1.jpg",
   },
   {
-    title: "Relationships",
+    title: "Trauma & Lingering Past Experiences",
     text:
-      "Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.",
+      "Unresolved experiences can quietly shape how you move through the world influencing relationships, confidence and your sense of safety. Using carefully paced, evidence-based approaches therapy becomes a space to process what you've carried and support lasting emotional healing.",
     image: "/specialty-2.jpg",
   },
   {
-    title: "Burnout",
+    title: "Burnout & High Internal Pressure",
     text:
-      "Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.",
+      "Many high-achieving adults push through stress for years before realizing how disconnected they've become from themselves. Therapy offers a place to slow down, reconnect and develop more sustainable ways of living and working without sacrificing the ambition that matters to you.",
     image: "/specialty-3.jpg",
   },
 ];
@@ -32,7 +32,7 @@ export default function Specialties(){
         <h2 className={`heading-xl text-primary text-center mb-20
         transition-opacity duration-500 ease-out
           ${show? "opacity-100":"opacity-0"}`}>
-          My Specialties
+          Areas of Focus
         </h2>
 
         <div className=" grid grid-cols-1 gap-6 sm:gap-5 sm:grid-cols-2 md:grid-cols-3">
@@ -41,7 +41,7 @@ export default function Specialties(){
               <Animated show={show} delay={120}>
                 <h3 className="px-1 py-3 mt-0 body-md font-medium text-primary">{item.title}</h3>
               </Animated>
-              <p className="mt-2.5 text-[13.7px] leading-[1.6] text-primary sm:max-w-132.25">{item.text}</p>
+              <p className="mt-2.5 text-[15px] leading-[1.6] text-primary sm:max-w-132.25">{item.text}</p>
               <Animated show={show} delay={320}>
                 <div className="mt-auto flex justify-center pt-10">
                   <div className="w-55 h-55 sm:w-100 sm:h-100 rounded-full overflow-hidden">

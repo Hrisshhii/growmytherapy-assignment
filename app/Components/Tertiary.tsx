@@ -32,21 +32,20 @@ export default function Tertiary() {
             <div className="max-w-200 px-6 sm:px-0">
               <Animated show={show} delay={0}>
                 <h1 className="mb-2 heading-lg text-primary tracking-tight">
-                  You don&apos;t have to do this all{" "}
-                  <span className="italic">alone</span>.
+                  {`When you're used to holding it all together.`}
                 </h1>
               </Animated>
 
               <p className="mt-4 body-lg text-primary">
-                {`If you are facing any of these, there's hope:`}
+                {`You may recognize parts of yourself in some of these experiences:`}
               </p>
               <ul className="mt-6 mb-6 pl-6 space-y-2 text-[1.35rem] leading-[1.75] text-primary">
                 {[
-                  "Persistent feelings of sadness or hopelessness",
-                  "Trouble focusing or making decisions",
-                  "Difficulty maintaining relationships",
-                  "Feeling constantly exhausted or unmotivated",
-                  "A pervasive sense of being overwhelmed"
+                  "Constant overthinking that makes it difficult to fully relax",
+                  "Holding yourself to high standards while quietly feeling exhausted",
+                  "Struggling to slow down without guilt",
+                  "Feeling outwardly capable but internally stretched thin",
+                  "Carrying the weight of past experiences into your present life"
                 ].map((item,i)=>(
                   <li key={i} className="flex gap-0.2 sm:gap-3 items-start transition-all duration-500 ease-out"
                     style={{
@@ -63,7 +62,7 @@ export default function Tertiary() {
 
               <Animated show={show} delay={220}>
                 <p className="mt-3 sm:mt-4 body-lg text-primary">
-                  {`With empathy and guidance, we'll work together to navigate the challenges life throws your way.`}
+                  {`If you're used to holding everything together while feeling overwhelmed inside, therapy can offer a space to slow down, feel supported and begin moving through life with greater steadiness and self-trust.`}
                 </p>
               </Animated>
             </div>
