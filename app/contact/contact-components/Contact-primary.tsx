@@ -13,14 +13,14 @@ export default function ContactPrimary() {
 
           <div className="flex flex-col items-center">
             <Animated show={show} delay={120}>
-              <h1 className="font-medium sm:text-left text-primary leading-[1.12] text-[clamp(2.2rem,8vw,3rem)] sm:text-[calc(4.2vw+1rem)]">
-                Let&apos;s Connect
+              <h1 className="font-medium sm:text-left text-primary leading-[1.12] text-[clamp(2.2rem,8vw,3rem)] sm:text-[calc(3vw+1rem)]">
+                A Calm Space Begins With One Conversation
               </h1>
             </Animated>
 
             <div className="mt-8 text-center sm:text-left sm:mt-25 text-primary text-[clamp(1rem,1.35vw,1.45rem)]">
-              <p className="mb-2">Starting therapy is courageous.</p>
-              <p>Get in touch for questions, or to book a free 15-minute consultation.</p>
+              <p className="mb-2">{`Taking the first step toward therapy can feel vulnerable, but you don't have to do it alone.`}</p>
+              <p>{`I invite you to reach out with any questions or to schedule a complimentary 15-minute consultation to see if we're a good fit.`}</p>
             </div>
             
             <div className="relative mt-14 lg:mt-20 mx-auto lg:mx-0">
@@ -45,12 +45,19 @@ export default function ContactPrimary() {
             </div>
           </div>
 
-          <div className="flex justify-start lg:justify-end lg:items-center">
-            <div className="bg-primary text-accent-soft p-6 sm:p-8 lg:p-10 max-w-full lg:max-w-200">
+          <div className="flex justify-center lg:justify-end lg:items-center">
+            <div className="bg-primary text-accent-soft p-6 sm:p-8 lg:p-10 max-w-full lg:max-w-200 rounded-2xl">
               <Animated show={show} delay={220}>
-                <p className="text-[1rem] sm:text-[1.35rem] leading-[1.7] sm:pb-15">
-                  <strong>PLEASE NOTE:</strong> If you opt to use a “Form Block” on your contact page this is not HIPAA-compliant. Squarespace stores data that is input into forms in the Marketing tab under Profiles. Instead, you can embed a HIPAA-compliant form, a link to your client portal, or simply put your email address.
-                </p>
+                <form action="" className="flex flex-col gap-4 sm:min-w-125 justify-center">
+                  <p className="mb-3 text-center text-[1.2rem]">
+                    Complimentary 15-minute consultation
+                  </p>
+                  <input type="text" placeholder="Your Name" className="p-4 rounded-md bg-secondary text-primary outline-none" />
+                  <input type="email" placeholder="Your Email" className="p-4 rounded-md bg-secondary text-primary outline-none" />
+                  <textarea rows={4} placeholder="How can I support you?" className="p-4 rounded-md bg-secondary text-primary outline-none resize-none" />
+                    <button type="submit" className="btn-light mt-6 ">Request a Consultation</button>
+                    <p className="text-sm opacity-80 mt-1 text-center">Your information is private and handled with care.</p>
+                </form>
               </Animated>
             </div>
           </div>
