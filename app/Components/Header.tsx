@@ -101,7 +101,7 @@ export default function Header() {
   return (
     <>
       <header className={`header text-primary relative z-50 ${isContact ? "bg-accent-soft":isPost?"bg-muted":"bg-secondary"}`}>
-        <div className="header-inner slide-in w-full">
+        <div className="header-inner slide-in w-full max-w-[100vw] overflow-hidden">
           <div className={`${headerBar} md:flex-row flex-row-reverse`}>
             <Link
               href="/"

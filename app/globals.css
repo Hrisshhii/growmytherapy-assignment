@@ -18,6 +18,8 @@
 }
 html,
 body {
+  overflow-x: hidden;
+  max-width:100%;
   font-family: "Gopher", serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -76,10 +78,10 @@ body {
 }
 
 .header-inner{
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  padding-left: 3.75vw;
-  padding-right: 3.75vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: clamp(1rem, 3.75vw, 3rem);
+  padding-right: clamp(1rem, 3.75vw, 3rem);
   pointer-events: auto;
   transition: padding 140ms ease-in-out;
 }
