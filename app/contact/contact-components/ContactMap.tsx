@@ -38,7 +38,7 @@ export default function ContactMap(){
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.7943930607395!2d-118.49394164100819!3d34.01365263873559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d1962aea15%3A0x414bf7875c4afe69!2sSanta%20Monica%20Place!5e0!3m2!1sen!2sin!4v1770158464498!5m2!1sen!2sin"
             title="Office Location"
             loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-full border-0 grayscale contrast-[90%]">
+            className="w-full h-full border-0 grayscale contrast-90">
             </iframe>
           </div>
         </div>
