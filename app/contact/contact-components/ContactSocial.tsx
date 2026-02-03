@@ -37,9 +37,15 @@ export default function ContactSocial() {
     <section className="bg-secondary text-primary py-24 md:py-32 border-b border-b-accent" ref={ref}>
       <div className="mx-auto max-w-450 section-x">
         <Animated show={show} delay={120}>
-          <h2 className="heading-lg mb-8 md:mb-12">
-            Find me on social.
-          </h2>
+          <div className=" mb-8 md:mb-12">
+            <h2 className="heading-lg mb-2">
+              Stay Connected.
+            </h2>
+            <p className="text-primary/50 text-[0.9rem]">
+              Follow for practical tools, reflections, and supportive reminders designed to help you feel more grounded in everyday life.{"  "}
+              <a href="https://www.instagram.com/" className="underline text-primary/80" target="_blank">Follow</a>
+            </p>
+          </div>
         </Animated>
 
         <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-10">

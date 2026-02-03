@@ -12,8 +12,8 @@ export default function Lightbox({images,index,onClose,onPrev,onNext}:Props){
   const isFirst = index === 0;
   const isLast = index === images.length - 1;
   return(
-    <div className="fixed inset-0 z-100 bg-white/95 flex items-center justify-center">
-      <button onClick={onClose} className="absolute top-6 right-6 text-2xl opacity-70 transition-opacity duration-300 hover:opacity-100 cursor-pointer">✕</button>
+    <div className="fixed inset-0 z-100 bg-accent-soft/95 flex items-center justify-center">
+      <button onClick={onClose} className="absolute text-primary top-6 right-6 text-2xl opacity-60 transition-opacity duration-300 hover:opacity-100 cursor-pointer">✕</button>
       <button onClick={onPrev} className={`absolute left-6 text-3xl transition-opacity duration-300 cursor-pointer
         ${isFirst ? "opacity-0 pointer-events-none" : "opacity-50 hover:opacity-100"}`}>{`<`}</button>
       <button onClick={onNext} className={`absolute right-6 text-3xl transition-opacity duration-300 cursor-pointer

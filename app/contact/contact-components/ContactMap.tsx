@@ -12,28 +12,38 @@ export default function ContactMap(){
           <Animated show={show} delay={120}>
             <div>
               <h2 className="heading-lg mb-10">
-                My Office
+                Visit My Office
               </h2>
-              <p className="body-md mb-8">
-                123 Example Street<br/>
-                Minneapolis, MN
-              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=123th+Street+45+W,+Santa+Monica,+CA+90401"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="body-md mb-8 block hover:opacity-70 transition"
+              >
+                123th Street 45 W,<br/>
+                Santa Monica, CA 90401
+              </a>
               <h3 className="font-medium mb-4 text-[1.6rem]">Hours</h3>
               <p className="body-md leading-[1.7]">
                 Monday - Friday<br/>
-                10am - 6pm
+                10:00 AM - 6:00 PM
+              </p>
+              <p className="text-accent-soft pt-15">
+                Secure telehealth available across California.
               </p>
             </div>
           </Animated>
         
-          <div className="relative w-full overflow-hidden h-105 sm:h-125">
-            <iframe src="https://www.google.com/maps?q=44.977753,-93.265011&z=12&output=embed" 
-            title="Office Location" 
-            className="w-full h-full border-0 grayscale contrast-[1.05]" 
-            loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
+          <div className="relative w-full rounded-xl overflow-hidden h-105 sm:h-125">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.7943930607395!2d-118.49394164100819!3d34.01365263873559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d1962aea15%3A0x414bf7875c4afe69!2sSanta%20Monica%20Place!5e0!3m2!1sen!2sin!4v1770158464498!5m2!1sen!2sin"
+            title="Office Location"
+            loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full border-0 grayscale contrast-[90%]">
+            </iframe>
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
