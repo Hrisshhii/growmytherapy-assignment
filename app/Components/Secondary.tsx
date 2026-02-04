@@ -16,7 +16,7 @@ export default function Secondary() {
         
         <div className="grid grid-rows-[1fr_auto] order-last lg:order-0">
 
-          <div className="flex justify-center sm:items-center pt-12 sm:pt-[4vh] px-10">
+          <div className="flex justify-center sm:items-center pt-12 sm:pt-[4vh] px-4">
             <div className="max-w-210 px-6 py-6 sm:py-8 sm:px-0">
               <Animated show={show} delay={0}>
                 <h1 className="heading-lg text-primary ">

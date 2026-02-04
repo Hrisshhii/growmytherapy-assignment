@@ -3,6 +3,7 @@ import Background from "./Components/Background";
 import FAQ from "./Components/FAQ";
 import Footer from "./Components/Footer";
 import GetStarted from "./Components/GetStarted";
+import Office from "./Components/Office";
 import Primary from "./Components/Primary";
 import Secondary from "./Components/Secondary";
 import Specialties from "./Components/Specialties";
@@ -16,6 +17,7 @@ export default function Home() {
         <Specialties />
         <Tertiary />
         <About />
+        <Office />
         <FAQ />
         <Background />
         <GetStarted />

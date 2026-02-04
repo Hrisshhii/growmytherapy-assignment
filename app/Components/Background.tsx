@@ -23,7 +23,7 @@ export default function Background(){
   const [openIndex,setOpenIndex]=useState<number | null>(null);
   const {ref,show}=useReveal(80);
   return (
-    <section className="bg-muted" ref={ref}>
+    <section className="bg-accent-soft" ref={ref}>
         <div className="mx-auto text-center max-w-250 section-x py-35">
           <Animated show={show} delay={0}>
             <h2 className="font-medium text-[clamp(2.5rem,3vw,3.25rem)] text-primary mb-10">

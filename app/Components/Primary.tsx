@@ -8,7 +8,7 @@ export default function Primary(){
   const {ref,show}=useReveal(80);
   return (
     <section className="w-full bg-secondary overflow-hidden" ref={ref}>
-      <div className="mx-auto max-w-450 section-x pt-24 sm:pt-30 lg:pt-35 pb-48 sm:pb-30">
+      <div className="mx-auto max-w-450 section-x pt-24 sm:pt-30 lg:pt-35 pb-30">
         <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-12 sm:gap-16 lg:gap-20 items-center">
 
         <Animated show={show} delay={0}>

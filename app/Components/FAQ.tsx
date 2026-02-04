@@ -30,12 +30,12 @@ export default function FAQ(){
   const {ref,show}=useReveal(80);
   const [openIndex,setOpenIndex]=useState<number | null>(null);
   return (
-    <section className="bg-secondary" ref={ref}>
-      <div className="mx-auto max-w-450 px-4 lg:px-12 pt-35 pb-40">
+    <section className="bg-muted" ref={ref}>
+      <div className="mx-auto max-w-450 px-4 lg:px-12 pt-30 pb-30">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 items-center mx-0">
-          <div className="relative flex justify-center mb-10 sm:mb-0">
+          <div className="relative flex justify-center mb-8 sm:mb-0">
             <Animated show={show} delay={120}>
-              <div className="mx-auto w-[38%] sm:w-full aspect-[2.8/5] sm:h-120 lg:h-205 overflow-hidden rounded-t-full">
+              <div className="mx-auto w-[45%] sm:w-full aspect-[2.8/5] sm:h-120 lg:h-205 overflow-hidden rounded-t-full">
                 <img src="/faq.jpg" alt="" className="w-full h-full object-cover" />
               </div>
             </Animated>

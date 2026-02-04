@@ -19,7 +19,7 @@ export default function GetStarted(){
             You may be used to managing things on your own, even when it feels overwhelming inside.<br/>{`Therapy creates space to pause, reflect, and move forward with greater clarity and stability. When you're ready for that support, I invite you to connect.`}
           </p>
           <Animated show={show} delay={120}>
-            <div className="mt-30">
+            <div className="mt-30 mb-10">
               <CTAButton className="btn-light text-[1.05rem]">Connect With Me</CTAButton>
             </div>
           </Animated>
