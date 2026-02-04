@@ -22,7 +22,7 @@ export default function Subscribe(){
   return (
     <section className="bg-accent py-40" ref={ref}>
       <div className="mx-auto max-w-450 section-x">
-        <div className="border border-white/70 px-8 sm:px-6 py-16 sm:py-14 text-center max-w-337.5 mx-auto transition-all duration-500">
+        <div className="border border-white/70 px-8 sm:px-6 py-15 sm:py-13 text-center max-w-337.5 mx-auto transition-all duration-500">
           {status==="success" && (
             <div className="flex-items-start justify-center pb-20 sm:pb-35">
               <p className="text-white text-[clamp(1rem,1.15vw,1.25rem)] font-medium animate-fade-in">Thank you!</p>

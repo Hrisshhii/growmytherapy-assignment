@@ -9,7 +9,7 @@ export default function Office(){
   return(
     <section className="bg-secondary text-primary py-32" ref={ref}>
       <div className="mx-auto max-w-450 section-x">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-20 items-center mx-2">
           <Animated show={show} delay={120}>
             <div className="max-w-xl">
               <h2 className="heading-lg mb-8">

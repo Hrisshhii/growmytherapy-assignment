@@ -137,7 +137,7 @@ export default function Header() {
           </div>
 
           <Link href="/" onClick={() => setMenuOpen(false)} className="font-medium text-[calc((2-1)*1.2vw+1rem)] text-primary">
-            Lilac Template
+            Dr. Maya Reynolds, PsyD
           </Link>
         </div>
 
