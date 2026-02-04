@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function TermsConditions(){
   return (
     <section className="bg-secondary text-primary py-32">
-      <div className="mx-auto max-w-450 section-x text-[0.95rem] lg:text-[1.25rem] leading-[1.6] lg:leading-[1.7] text-primary">
+      <div className="mx-auto max-w-450 section-x body-md text-primary">
         <p>Your privacy is important to us. This website is designed to provide information about therapy services while respecting the confidentiality of every visitor.</p>
         <ul className="list-disc pl-6 my-4">
           <li className="ml-10"><strong>Information We Collect:</strong> If you choose to contact us through this website, we may collect personal information such as your name, email address, phone number, or any details you voluntarily provide.</li>
