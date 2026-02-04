@@ -9,7 +9,7 @@ export default function About(){
   return (
     <section className="bg-muted" ref={ref}>
       <div className="mx-auto max-w-450 px-4 lg:px-12 pt-25 pb-30 sm:pt-35 sm:pb-40">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center mx-0">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 items-center mx-0">
           <div className="order-last lg:order-0">
             <div className="px-1 sm:px-0">
               <Animated show={show} delay={120}>
