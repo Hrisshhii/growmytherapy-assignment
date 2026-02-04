@@ -35,7 +35,7 @@ export default function Specialties(){
           Areas of Focus
         </h2>
 
-        <div className=" grid grid-cols-1 gap-6 sm:gap-5 sm:grid-cols-2 md:grid-cols-3">
+        <div className=" grid grid-cols-1 gap-6 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {specialties.map((item)=>(
             <div key={item.title} className=" flex w-full h-full flex-col border border-primary bg-muted p-5 transition-transform duration-300 hover:-translate-y-1.5">
               <Animated show={show} delay={120}>
