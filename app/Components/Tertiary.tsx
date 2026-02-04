@@ -71,7 +71,7 @@ export default function Tertiary() {
           <Animated show={show} delay={320}>
             <div className="border-t border-primary/50 mt-10 sm:mt-0">
               <CTAButton className="w-full py-8 text-sm font-medium tracking-wide text-primary transition-colors duration-500 ease-in-out hover:bg-primary hover:text-secondary cursor-pointer">
-                WORK WITH ME
+                Begin Therapy
               </CTAButton>
             </div>
           </Animated>

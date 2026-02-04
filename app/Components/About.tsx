@@ -18,11 +18,14 @@ export default function About(){
                 </h2>
               </Animated>
               
-              <p className="mt-6 body-md leading-[1.55] sm:leading-[1.7] text-primary transition-all duration-500 ease-out">
-                Dr. Maya Reynolds is a licensed clinical psychologist based in Santa Monica, specializing in therapy for adults navigating anxiety, trauma and burnout. Her approach is warm, collaborative, and grounded in evidence-based methods, creating a space where clients feel supported while engaging in meaningful, depth-oriented work.
+              <p className="mt-10 body-md leading-[1.55] sm:leading-[1.7] text-primary transition-all duration-500 ease-out">
+                Dr. Maya Reynolds is a licensed clinical psychologist based in <strong>Santa Monica</strong>, specializing in therapy for adults navigating anxiety, trauma and burnout. Her approach is warm, collaborative, and grounded in evidence-based methods, creating a space where clients feel supported while engaging in meaningful, depth-oriented work.
               </p>
               <p className="mt-6 body-md leading-[1.55] sm:leading-[1.7] text-primary transition-all duration-500 ease-out">
                 {`Whether you're feeling persistently overwhelmed, struggling with internal pressure, or processing past experiences, therapy can help you develop greater insight, resilience, and a more sustainable way of living.`}
+              </p>
+              <p className="mt-3 body-md leading-[1.55] sm:leading-[1.7] text-primary transition-all duration-500 ease-out">
+                In-person therapy in Santa Monica and secure telehealth sessions across California.
               </p>
             </div>
 

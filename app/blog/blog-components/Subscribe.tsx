@@ -36,9 +36,10 @@ export default function Subscribe(){
                 </h2>
               </Animated>
               
-              <p className="text-white/90 mb-11 text-[clamp(1rem,1.15vw,1.25rem)]">
+              <p className="text-white/90 mb-3 text-[clamp(1rem,1.15vw,1.25rem)]">
                 Receive occasional reflections, mental health resources, and gentle guidance for navigating life with greater steadiness.
               </p>
+              <p className="text-white/70 mb-11 text-[clamp(0.8rem,1.vw,1.2rem)]">In-person therapy in Santa Monica and secure telehealth sessions across California.</p>
               
               <form onSubmit={onSubmit} className="flex flex-col items-center sm:flex-row justify-center gap-4 mb-6">
                 <div className="w-full max-w-[320px]">

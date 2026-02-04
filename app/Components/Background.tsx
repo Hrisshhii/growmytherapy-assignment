@@ -11,7 +11,7 @@ const data = [
   },
   {
     question: "Licensure",
-    answer: "Dr. Reynolds is a Licensed Clinical Psychologist practicing in Santa Monica, California and provides therapy both in-person and via secure telehealth for clients across the state."
+    answer: `Dr. Reynolds is a Licensed Clinical Psychologist practicing in <strong>Santa Monica, California and provides therapy both in-person and via secure telehealth for clients across the state.`
   },
   {
     question: "Clinical Approach & Methods",
