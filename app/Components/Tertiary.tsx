@@ -28,7 +28,7 @@ export default function Tertiary() {
         
         <div className="grid grid-rows-[1fr_auto]">
 
-          <div className="flex pt-8 sm:pt-0 sm:items-center justify-center">
+          <div className="flex pt-10 sm:items-center justify-center px-10">
             <div className="max-w-200 px-6 sm:px-0">
               <Animated show={show} delay={0}>
                 <h1 className="mb-2 heading-lg text-primary tracking-tight">
@@ -39,7 +39,7 @@ export default function Tertiary() {
               <p className="mt-4 body-lg text-primary">
                 {`You may recognize parts of yourself in some of these experiences:`}
               </p>
-              <ul className="mt-6 mb-6 pl-6 space-y-2 text-[1.35rem] leading-[1.75] text-primary">
+              <ul className="mt-5 mb-6 pl-6 space-y-2 text-[1.35rem] leading-[1.45] text-primary">
                 {[
                   "Constant overthinking that makes it difficult to fully relax",
                   "Holding yourself to high standards while quietly feeling exhausted",

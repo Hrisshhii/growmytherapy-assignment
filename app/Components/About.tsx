@@ -9,9 +9,9 @@ export default function About(){
   return (
     <section className="bg-muted" ref={ref}>
       <div className="mx-auto max-w-450 px-4 lg:px-12 pt-25 pb-30 sm:pt-35 sm:pb-40">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 items-center mx-0">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center mx-0">
           <div className="order-last lg:order-0">
-            <div className="px-6 sm:px-0 min-w-0 sm:min-w-3xl">
+            <div className="px-6 sm:px-0">
               <Animated show={show} delay={120}>
                 <h2 className="heading-xl text-primary">
                   Meet Dr. Maya Reynolds, PsyD
@@ -38,14 +38,14 @@ export default function About(){
             </Animated>
           </div>
 
-          <div className="relative flex justify-center order-first lg:order-0">
+          <div className="relative flex justify-center w-full mx-auto order-first lg:order-0">
             <Animated show={show} delay={120}>
-              <div className="mx-auto w-[75%] sm:w-132.5 h-[38vh] aspect-[2.8/5] sm:h-195 overflow-hidden rounded-t-full">
+              <div className="mx-auto w-[60%] sm:w-[58%] aspect-[2.9/5] overflow-hidden rounded-t-full">
                 <img src="/about-main.jpg" alt="" className="w-full h-full object-cover object-center" />
               </div>
             </Animated>
             <Animated show={show} delay={220}>
-              <div className="absolute -bottom-8 -right-4 sm:-bottom-20 sm:-right-20 w-30 h-30 sm:w-95 sm:h-95 rounded-full overflow-hidden">
+              <div className="absolute -bottom-8 -right-4 lg:-bottom-20 lg:right-16 w-56 sm:w-64 lg:w-78 aspect-square rounded-full overflow-hidden">
                 <img src="/about-circle.jpg" alt="" className="w-full h-full object-cover"/>
               </div>
             </Animated>
