@@ -26,17 +26,13 @@ export default function BlogPrimary(){
 
           <div className="text-center lg:text-left flex flex-col items-center lg:items-start lg:-ml-15">
             <Animated show={show} delay={120}>
-              <h1 className="font-medium text-primary leading-[1.12] text-[clamp(2.2rem,8vw,3rem)] sm:text-[calc(4.2vw+1rem)] mb-10">
-                The Lilac Blog
+              <h1 className="font-medium text-primary leading-[1.12] text-[clamp(2.2rem,8vw,3rem)] sm:text-[calc(3vw+1rem)] mb-10">
+                Understanding Yourself More Deeply
               </h1>
             </Animated>
             <Animated show={show} delay={220}>
-              <p className="font-normal text-[1.5rem] md:text-[1.75rem] leading-[1.7] max-w-[30ch] mb-4">
-                My tiny corner of the internet where I talk about all things healing, heart, and wholeness.
-              </p>
-
-              <p className="font-bold text-[1.2rem]">
-                Glad you&apos;re here.
+              <p className="font-normal text-[1.5rem] md:text-[1.75rem] leading-[1.7] max-w-[55ch] mb-4">
+                {`A collection of practical insights, gentle reflections and evidence-based strategies to support emotional wellbeing. These resources are designed to help you better understand yourself, navigate life's challenges, and move toward lasting change.`}
               </p>
             </Animated>
           </div>

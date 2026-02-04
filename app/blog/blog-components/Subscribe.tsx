@@ -32,12 +32,12 @@ export default function Subscribe(){
             <>
               <Animated show={show} delay={120}>
                 <h2 className="text-white text-[clamp(2.5rem,3vw,3.25rem)] font-medium mb-4">
-                  Subscribe
+                  Stay Connected
                 </h2>
               </Animated>
               
               <p className="text-white/90 mb-11 text-[clamp(1rem,1.15vw,1.25rem)]">
-                Sign up with your email address to receive news and updates.
+                Receive occasional reflections, mental health resources, and gentle guidance for navigating life with greater steadiness.
               </p>
               
               <form onSubmit={onSubmit} className="flex flex-col items-center sm:flex-row justify-center gap-4 mb-6">
@@ -45,7 +45,7 @@ export default function Subscribe(){
                   {submitted && !email && status==="idle" && (
                     <p className="bg-red-200 text-red-700 text-sm px-4 py-2 mb-4 rounded text-center">Email Address is required.</p>
                   )}
-                  <input type="email" placeholder="Email Address" value={email}
+                  <input type="email" placeholder="Your Email Address" value={email}
                   className="w-full sm:w-[320px] px-5 py-5 text-gray outline-none bg-white text-[clamp(1rem,1.15vw,1.25rem)] focus:ring-0 focus:outline-none"
                   onChange={e=>setEmail(e.target.value)}
                   />
@@ -55,11 +55,11 @@ export default function Subscribe(){
                   <button type="submit" disabled={status==="loading"} className="px-8 pt-5.5 pb-5.5 border border-white text-white hover:bg-gray-400 hover:border-gray-400 hover:text-black transition disabled:opacity-60 cursor-pointer flex items-center justify-center">
                     {status==="loading"?(
                       <span className="h-5 w-5 border-2 border-white border-t-transprent rounded-full animate-spin" />
-                    ):("SIGN UP")}
+                    ):("Join the List")}
                   </button>
                 </Animated>
               </form>
-              <p className="text-white text-bold text-[1rem] mt-10">We respect your privacy.</p>
+              <p className="text-white text-bold text-[1rem] mt-10">Your privacy is respected. You may unsubscribe at any time.</p>
             </>
           )}
         </div>

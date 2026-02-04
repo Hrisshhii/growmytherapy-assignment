@@ -23,7 +23,7 @@ export default function BlogPosts(){
               <p className={`text-[0.8rem] mb-2 text-bold fade-left ${show?"show":""}`}>{post.date}</p>
               <Animated show={show} delay={220}>
                 <a href={`/blog/${post.slug}`} className="block">
-                  <h3 className="heading-lg text-primary">{post.title}</h3>
+                  <h3 className="font-medium text-[clamp(2.25rem,4vw,4.1rem)] leading-[1.15] sm:text-[clamp(2rem,3vw,3.5rem)] text-primary">{post.title}</h3>
                 </a>
               </Animated>
               <a href={`/blog/${post.slug}`} className={`text-black inline-block font-medium border-b border-current leading-tight pb-[0.2px] mt-10 fade-left ${show?"show":""}`}>Read More

@@ -26,16 +26,16 @@ export default function BlogPostClient({ post, prev, next }: BlogProps){
         <div className="mx-auto mx-w-[720px] section-x text-center">
           <p className="text-xs tracking-widest mb-6">{post.date}</p>
           <Animated show={show} delay={120}>
-            <h1 className="font-medium text-primary leading-[1.12] text-[clamp(2.2rem,8vw,3rem)] sm:text-[calc(4.2vw+1rem)] mb-15">{post.title}</h1>
+            <h1 className="font-medium text-primary leading-[1.12] text-[clamp(2.2rem,8vw,3rem)] sm:text-[calc(3vw+1rem)] mb-15">{post.title}</h1>
           </Animated>
         
-          <article className={`mx-auto text-center sm:text-left font-medium max-w-225 leading-[1.8] space-y-3 text-[1.2rem] fade-left ${show?"show":""}`}>
+          <article className={`mx-auto text-center sm:text-left font-medium max-w-265 leading-[1.8] space-y-3 text-[1.2rem] fade-left ${show?"show":""}`}>
             {post.content.map((para, i) => (
               <p key={i}>{para}</p>
             ))}
           </article>
           <Animated show={show} delay={220}>
-            <nav className="flex sm:flex-row justify-between items-center gap-8 mt-32 font-medium text-[clamp(1.75rem,3.5vw,1.75rem)] sm:text-[calc(1.8vw+0.8rem)]">
+            <nav className="flex sm:flex-row justify-between items-center gap-8 mt-32 font-medium text-[clamp(1.6rem,3.25vw,1.5rem)] sm:text-[calc(1.5vw+0.8rem)]">
               
                 {prev ? (
                   <a href={`/blog/${prev.slug}`} className="flex items-center gap-2 text-left max-w-[45%]">
