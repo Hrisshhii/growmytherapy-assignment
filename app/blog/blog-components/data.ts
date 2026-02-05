@@ -31,7 +31,7 @@ export const posts = [
   {
     slug: "blog-post-three",
     title: "When “Functioning” Isn’t the Same as Thriving",
-    image:"/about-circle.jpg",
+    image:"/blog-3.jpg",
     date: "Sept 15, 2025",
     content: [
       "From the outside, your life may appear steady. You meet responsibilities, maintain relationships, and continue achieving what is asked of you. Others may even describe you as dependable or resilient.",
