@@ -16,16 +16,20 @@ export default function About(){
                 <h2 className="heading-xl text-primary">
                   Meet Dr. Maya Reynolds, PsyD
                 </h2>
+                <p className="mt-5 text-[0.9rem] text-primary/75">Licensed Clinical Psychologist | PsyD</p>
               </Animated>
               
-              <p className="mt-10 body-md leading-[1.55] sm:leading-[1.7] text-primary transition-all duration-500 ease-out">
-                Dr. Maya Reynolds is a licensed clinical psychologist based in <strong>Santa Monica</strong>, specializing in therapy for adults navigating anxiety, trauma and burnout. Her approach is warm, collaborative, and grounded in evidence-based methods, creating a space where clients feel supported while engaging in meaningful, depth-oriented work.
+              <p className="mt-10 body-md leading-[1.55] sm:leading-[1.7] text-primary/90 transition-all duration-500 ease-out">
+                Dr. Maya Reynolds, PsyD, is a <strong className="text-[1.25rem] text-primary">licensed clinical psychologist</strong> based in <strong className="text-primary">Santa Monica</strong>, specializing in therapy for adults navigating anxiety, trauma and burnout. Her work integrates <strong className="text-[1.25rem] text-primary">evidence-based therapies</strong> with a warm, collaborative approach creating a space where clients feel both supported and meaningfully challenged in their growth.
               </p>
-              <p className="mt-6 body-md leading-[1.55] sm:leading-[1.7] text-primary transition-all duration-500 ease-out">
-                {`Whether you're feeling persistently overwhelmed, struggling with internal pressure, or processing past experiences, therapy can help you develop greater insight, resilience, and a more sustainable way of living.`}
+              <p className="mt-6 body-md leading-[1.55] sm:leading-[1.7] text-primary/90 transition-all duration-500 ease-out">
+                Whether you&apos;re feeling persistently overwhelmed, struggling with internal pressure, or processing past experiences, therapy can help you develop deeper insight, strengthen resilience, and move toward a more sustainable way of living.
               </p>
-              <p className="mt-3 body-md leading-[1.55] sm:leading-[1.7] text-primary transition-all duration-500 ease-out">
-                In-person therapy in Santa Monica and secure telehealth sessions across California.
+              <p className="mt-3 body-md leading-[1.55] sm:leading-[1.7] text-primary/90 transition-all duration-500 ease-out">
+                Dr. Reynolds is particularly experienced in working with <strong className="text-[1.25rem] text-primary">high-achieving professionals</strong> seeking greater emotional clarity and lasting change.
+              </p>
+              <p className="mt-3 body-md leading-[1.55] sm:leading-[1.7] text-primary/90 transition-all duration-500 ease-out">
+                <strong className="text-[1.25rem] text-primary">In-person therapy</strong> in Santa Monica and <strong className="text-[1.25rem] text-primary">secure telehealth sessions across California.</strong>
               </p>
             </div>
 

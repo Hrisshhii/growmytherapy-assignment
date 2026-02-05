@@ -9,10 +9,10 @@ import Animated from "@/app/Components/hooks/Animated";
 export default function ContactSocial() {
   const {ref,show}=useReveal(0);
   const images = [
-    "/about-main.jpg",
-    "/speciality-3.jpg",
-    "/hero-2.jpg",
-    "/hero-1.jpg",
+    "/post-1.jpg",
+    "/post-2.jpg",
+    "/post-3.jpg",
+    "/post-4.jpg",
   ];
 
   const [active, setActive] = useState<number | null>(null);

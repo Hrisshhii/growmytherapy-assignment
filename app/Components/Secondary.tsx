@@ -20,18 +20,23 @@ export default function Secondary() {
             <div className="max-w-210 px-6 py-4 sm:py-8 sm:px-0">
               <Animated show={show} delay={0}>
                 <h1 className="heading-lg text-primary ">
-                  When life looks manageable on the outside but feels overwhelming within
+                  When life looks composed on the outside, but feels overwhelming within.
                 </h1>
               </Animated>
                 <Animated show={show} delay={120}>
-                  <p className="mt-6 body-md text-primary">
-                    {`You may appear capable and composed to others while privately carrying anxiety, emotional fatigue, or the weight of past experiences. Many of the adults I work with are high-achieving yet feel stuck in cycles of overthinking, burnout, or constant internal pressure.`}
+                  <p className="mt-4 body-md text-primary/95">
+                    You may appear capable and composed to others while privately carrying <strong className="text-[1.2rem] text-primary">anxiety</strong>,{" "}
+                    <strong className="text-[1.2rem] text-primary">emotional exhaustion</strong>, or the lingering impact of past experiences. Many of the adults I work with are <strong className="text-[1.2rem] text-primary">high-achieving professionals</strong> who feel caught in cycles of overthinking, burnout, perfectionism, or constant internal pressure.
+                  </p>
+                  <p className="mt-4 body-md text-primary/95">
+                    Therapy offers a <strong className="text-[1.2rem] text-primary">confidential space</strong> to slow down, gain clarity, and better understand both the emotional and physiological patterns shaping your experience. Together, we focus on helping you feel more <strong className="text-[1.2rem] text-primary">grounded</strong>, <strong className="text-[1.2rem] text-primary">resilient</strong>, and equipped to move through life with greater steadiness.
                   </p>
                 </Animated>
 
                 <Animated show={show} delay={220}>
-                  <p className="mt-4 body-md text-primary">
-                    {`Therapy offers a space to slow down, gain clarity, and build a more steady, sustainable way of living.`}
+                  <p className="mt-3 body-md text-primary/95">
+                    Change does not require you to fall apart first - it begins with awareness, support and the right therapeutic relationship.{" "} 
+                    <strong className="text-[1.2rem] text-primary">Dr. Reynolds</strong> integrates evidence-based therapies tailored to the needs of each client.
                   </p>
                 </Animated>
             </div>

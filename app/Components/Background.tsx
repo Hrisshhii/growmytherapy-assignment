@@ -7,15 +7,15 @@ import { useReveal } from "./hooks/useReveal";
 const data = [
   {
     question: "Education",
-    answer: "Dr. Maya Reynolds holds a Doctorate in Clinical Psychology (PsyD), with advanced training focused on evidence-based therapeutic care for adults experiencing anxiety, trauma, and chronic stress."
+    answer: (<>Dr. Maya Reynolds holds a <strong className="text-[1.2rem] sm:text-[1.3rem] text-primary">Doctorate in Clinical Psychology (PsyD)</strong>, with advanced training focused on <strong className="text-[1.2rem] sm:text-[1.3rem] text-primary">evidence-based therapeutic care</strong> for adults experiencing anxiety, trauma, and chronic stress.</>)
   },
   {
-    question: "Licensure",
-    answer: `Dr. Reynolds is a Licensed Clinical Psychologist practicing in <strong>Santa Monica, California and provides therapy both in-person and via secure telehealth for clients across the state.`
+    question: "Licensure & Professional Standing",
+    answer: (<>Dr. Reynolds is a <strong className="text-[1.2rem] sm:text-[1.3rem] text-primary">Licensed Clinical Psychologist</strong> practicing in <strong className="text-[1.2rem] sm:text-[1.3rem] text-primary">Santa Monica, California</strong> - and provides therapy both in-person and via secure telehealth for clients across the state.</>)
   },
   {
     question: "Clinical Approach & Methods",
-    answer: "Her work integrates evidence-based approaches including Cognitive Behavioral Therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques to support meaningful, lasting change."
+    answer: (<>Her work integrates evidence-based approaches including <strong className="text-[1.2rem] sm:text-[1.3rem] text-primary">Cognitive Behavioral Therapy (CBT)</strong>, <strong className="text-[1.2rem] sm:text-[1.3rem] text-primary">EMDR</strong>, <strong className="text-[1.2rem] sm:text-[1.3rem] text-primary">mindfulness-based practices</strong>, and body-oriented techniques to support meaningful, lasting change.</>)
   }
 ];
 
@@ -27,7 +27,7 @@ export default function Background(){
         <div className="mx-auto text-center max-w-250 section-x py-35">
           <Animated show={show} delay={0}>
             <h2 className="font-medium text-[clamp(2.5rem,3vw,3.25rem)] text-primary my-10">
-              Professional Credentials
+              Credentials & Professional Training
             </h2>
           </Animated>  
           <div className="space-y-4 text-left">
@@ -60,7 +60,7 @@ export default function Background(){
                               `}
                           >
                             <div className="flex justify-center">
-                              <p className="max-w-162.5 text-[1rem] sm:text-[1.3rem] leading-[1.7] text-primary px-4 pb-6">
+                              <p className="max-w-162.5 text-[1rem] sm:text-[1.3rem] leading-[1.7] text-primary/90 px-4 pb-6">
                                 {ques.answer}
                               </p>
                             </div>

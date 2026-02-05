@@ -4,6 +4,15 @@ import CTAButton from "./hooks/CTAbutton";
 import { useReveal } from "./hooks/useReveal";
 import Image from "next/image";
 
+const items=[
+  <>Constant <strong className="text-[1.25rem] text-primary">overthinking</strong> that makes it difficult to fully relax</>,
+  <>Holding yourself to <strong className="text-[1.25rem] text-primary">exceptionally high standards</strong> while quietly feeling exhausted</>,
+  <>Struggling to slow down without <strong className="text-[1.25rem] text-primary">guilt</strong></>,
+  <>Appearing capable on the outside while internally feeling <strong className="text-[1.25rem] text-primary">stretched thin</strong></>,
+  <>Noticing how past experiences continue to shape your reactions, relationships, or <strong className="text-[1.25rem] text-primary">sense of safety</strong></>
+];
+
+
 export default function Tertiary() {
   const { ref, show } = useReveal(120);
 
@@ -32,7 +41,7 @@ export default function Tertiary() {
           <div className="flex pt-10 sm:items-center justify-center px-2">
             <div className="max-w-200 px-6 sm:px-0">
               <Animated show={show} delay={0}>
-                <h1 className="mb-2 heading-lg text-primary tracking-tight">
+                <h1 className="mb-2 heading-lg text-primary/95 tracking-tight">
                   {`When you're used to holding it all together.`}
                 </h1>
               </Animated>
@@ -40,14 +49,8 @@ export default function Tertiary() {
               <p className="mt-4 body-lg text-primary">
                 {`You may recognize parts of yourself in some of these experiences:`}
               </p>
-              <ul className="mt-5 mb-6 pl-4 space-y-2 body-md leading-[1.45] text-primary">
-                {[
-                  "Constant overthinking that makes it difficult to fully relax",
-                  "Holding yourself to high standards while quietly feeling exhausted",
-                  "Struggling to slow down without guilt",
-                  "Feeling outwardly capable but internally stretched thin",
-                  "Carrying the weight of past experiences into your present life"
-                ].map((item,i)=>(
+              <ul className="mt-5 mb-6 pl-4 space-y-2 body-md leading-[1.45] text-primary/90">
+                {items.map((item,i)=>(
                   <li key={i} className="flex gap-1 sm:gap-3 items-start transition-all duration-500 ease-out"
                     style={{
                       opacity: show? 1:0,
@@ -62,8 +65,8 @@ export default function Tertiary() {
               </ul>
 
               <Animated show={show} delay={220}>
-                <p className="mt-3 sm:mt-4 body-lg text-primary">
-                  {`If you're used to holding everything together while feeling overwhelmed inside, therapy can offer a space to slow down, feel supported and begin moving through life with greater steadiness and self-trust.`}
+                <p className="mt-3 sm:mt-4 body-lg text-primary/95">
+                  {`If you're used to holding everything together while feeling overwhelmed inside, therapy can offer a confidential space to slow down, feel supported and develop a steadier, more self-trusting way of moving through life.`}
                 </p>
               </Animated>
             </div>

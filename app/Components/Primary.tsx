@@ -19,14 +19,15 @@ export default function Primary(){
 
         <div className="text-center sm:mt-0"  style={{ animationDelay: "120ms" }}>
           <Animated show={show} delay={120}>
-            <h1 className="font-medium text-primary leading-[1.15] text-[clamp(2.2rem,8vw,3rem)] sm:text-[calc(3.25vw+1.5rem)]">
-              Find steadiness in the midst of overwhelm
+            <h1 className="font-medium text-primary leading-[1.12] text-[clamp(2.2rem,8vw,3rem)] sm:text-[calc(3.2vw+1.5rem)]">
+              Find steadiness, even when life feels overwhelming
             </h1>
           </Animated>
           <Animated show={show} delay={220}>
             <p className="mt-5 text-primary text-[clamp(1rem,1.05vw,1.15rem)]">
-              Therapy for Anxiety, Trauma and Burnout in Santa Monica, CA.
+              Specialized Therapy for Anxiety, Trauma & Burnout in <strong className="text-[1.2rem]">Santa Monica, CA.</strong>
             </p>
+            <p className="text-primary/60 text-[0.85rem]">In-person therapy in Santa Monica and secure telehealth across California.</p>
           </Animated>
           <Animated show={show} delay={320}>
             <div className="mt-8">

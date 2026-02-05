@@ -25,20 +25,20 @@ export default function ContactPrimary() {
             
             <div className="relative mt-14 lg:mt-20 mx-auto lg:mx-0">
               <Animated show={show} delay={220}>
-                <div className="w-42.5 h-69 sm:w-72 sm:h-105 overflow-hidden rounded-t-full">
+                <div className="w-42.5 h-69 sm:w-72 sm:h-110 overflow-hidden rounded-t-full">
                   <img
-                    src="/about-main.jpg"
-                    alt=""
-                    className="w-full h-full object-cover"
+                    src="/office-2.jpeg"
+                    alt="Comfortable and welcoming therapy office"
+                    className="w-full h-full object-cover brightness-85 contrast-75 saturate-85 blur-[0.3px]"
                   />
               </div>
               </Animated>
               <Animated show={show} delay={320}>
-                <div className="absolute bottom-0 -right-20 w-30 h-30 sm:-right-27 sm:w-45 sm:h-45 rounded-full overflow-hidden">
+                <div className="absolute -bottom-10 -right-5 w-25 h-25 sm:-bottom-10 sm:-right-12 sm:w-40 sm:h-40 rounded-full overflow-hidden">
                   <img
-                    src="/about-circle.jpg"
-                    alt=""
-                    className="w-full h-full object-cover"
+                    src="/contact.jpg"
+                    alt="Hands holding a warm cup of tea, symbolizing comfort and safety"
+                    className="w-full h-full object-cover brightness-95 contrast-90 saturate-75"
                   />
                 </div>
               </Animated>

@@ -7,22 +7,25 @@ import { useReveal } from "./hooks/useReveal";
 const faqs = [
   {
     question: "Do you offer in-person or virtual therapy?",
-    answer: "I offer in-person therapy from my Santa Monica office as well as secure telehealth sessions for clients located throughout California. Together, we can choose the format that feels most comfortable and supportive for you."
+    answer: (<>I offer <strong className="text-[1.25rem] text-primary">in-person therapy from my Santa Monica office</strong> as well as <strong className="text-[1.25rem] text-primary">secure telehealth sessions for clients located throughout California</strong>. Together, we can choose the format that best supports your comfort, privacy, and schedule.</>)
   },
   {
     question: "What concerns do you typically help clients with?",
-    answer: "I primarily work with adults experiencing anxiety, trauma, chronic stress, panic, and professional burnout. Many of the people I support are high-achieving individuals who appear capable on the outside but feel internally overwhelmed, emotionally exhausted, or stuck in patterns that no longer serve them."
+    answer: (<>I primarily work with <strong className="text-[1.25rem] text-primary">adults experiencing anxiety</strong>, <strong className="text-[1.25rem] text-primary">trauma</strong>, <strong className="text-[1.25rem] text-primary">chronic stress</strong>, <strong className="text-[1.25rem] text-primary">panic</strong>, and <strong className="text-[1.25rem] text-primary">professional burnout</strong>. Many of my clients are high-achieving individuals who appear capable externally yet feel internally overwhelmed, emotionally exhausted, or caught in patterns that no longer serve them.</>)
   },
   {
     question: "What is your approach to therapy?",
-    answer: "My approach is warm, collaborative and grounded in evidence-based practices such as cognitive-behavioral therapy (CBT), EMDR, mindfulness and body-oriented techniques. Sessions provide structure and support while allowing space for reflection, insight, and deeper emotional work."
+    answer: (<>My approach is warm, collaborative and grounded in <strong className="text-[1.25rem] text-primary">evidence-based practices</strong> such as <strong className="text-[1.25rem] text-primary">cognitive-behavioral therapy (CBT)</strong>, <strong className="text-[1.25rem] text-primary">EMDR</strong>, mindfulness and body-oriented techniques. Sessions provide structure and support while allowing space for reflection, insight, and meaningful emotional work.</>)
   },{
-    question:"What can I expect from our work together?",
-    answer:"Therapy is a space to slow down, gain clarity and reconnect with yourself. My goal is not only symptom relief but helping you build resilience, deepen self-understanding, and develop a stronger relationship with yourself over time."
+    question:"What can I expect from therapy?",
+    answer:(<>Therapy is a confidential space to slow down, gain clarity and reconnect with yourself. My goal is not only symptom relief but helping you build resilience, deepen self-understanding, and develop a stronger, more compassionate relationship with yourself over time.</>)
   },
   {
     question:"How do I get started?",
-    answer:"Getting started is simple. You can reach out to schedule a consultation where we’ll discuss your needs, answer any questions, and determine whether we’re a good fit. From there, we can begin building a path forward together."
+    answer:(<>Getting started is simple. You’re welcome to reach out to schedule a <strong className="text-[1.25rem] text-primary">15-min free consultation</strong> where we can discuss your needs, answer any questions, and determine whether we’re a good fit. From there, we can begin building a thoughtful path forward at a pace that feels comfortable for you.</>)
+  },{
+    question:"Is therapy confidential?",
+    answer:(<><strong className="text-[1.25rem] text-primary">Yes.</strong> Confidentiality is a foundational part of therapy. Your privacy is respected and protected in accordance with professional and legal standards.</>)
   }
 ];
 
@@ -44,7 +47,7 @@ export default function FAQ(){
             <div className="w-full min-w-0 lg:min-w-none">
               <Animated show={show} delay={120}>
                 <h2 className="heading-xl text-primary mb-8 sm:mb-20">
-                  Questions You May Have
+                  Frequently Asked Questions
                 </h2>
               </Animated>
 
@@ -70,7 +73,7 @@ export default function FAQ(){
                                 `}
                               />
                             </span>
-                            <span className="text-[1.25rem] sm:heading-md text-primary ml-2">{faq.question}</span>
+                            <span className="text-[1.25rem] sm:heading-md text-primary/90 ml-2">{faq.question}</span>
                           </button>
                           <div
                             className={`overflow-hidden transition-all duration-500
